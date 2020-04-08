@@ -1,0 +1,43 @@
+{
+	"model": {
+		"anchors": [
+			31,
+			29,
+			86,
+			119,
+			34,
+			27,
+			25,
+			29,
+			71,
+			124,
+			44,
+			48,
+			67,
+			69,
+			37,
+			30,
+			45,
+			45
+		],
+		"labels": ["mask"],
+		"net_size": 288
+	},
+	"pretrained": {
+		"keras_format": "configs\\mask_500\\weights.h5",
+		"darknet_format": "yolov3.weights"
+	},
+	"train": {
+		"min_size": 288,
+		"max_size": 288,
+		"num_epoch": 30,
+		"train_image_folder": "dataset/mask_500/train/images",
+		"train_annot_folder": "dataset/mask_500/train/annotations",
+		"valid_image_folder": "dataset/mask_500/train/images",
+		"valid_annot_folder": "dataset/mask_500/train/annotations",
+		"batch_size": 8,
+		"learning_rate": 1e-4,
+		"save_folder": "configs/mask_500",
+		"jitter": false
+	}
+}
