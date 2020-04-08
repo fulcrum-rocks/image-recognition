@@ -1,0 +1,9 @@
+opencv-python
+Pillow
+requests
+tqdm
+sklearn
+imgaug==0.2.6
+pytest-cov
+codecov
+matplotlib
