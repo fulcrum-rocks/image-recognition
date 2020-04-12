@@ -28,8 +28,6 @@ share/python-wheels/
 MANIFEST
 
 imgs
-yolo
-dataset
 setup.py
 yolov3.weights
 weights.h5
