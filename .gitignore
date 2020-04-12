@@ -33,6 +33,7 @@ dataset
 setup.py
 yolov3.weights
 weights.h5
+videoplayback.mp4
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
