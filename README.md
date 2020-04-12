@@ -27,3 +27,17 @@ python video.py -c configs/mask_500.json -i videoplayback.mp4
 python src/eval.py -c configs/mask_500.json
 
 best result => {'fscore': 0.8120770432066632, 'precision': 0.8676307007786429, 'recall': 0.7632093933463796}
+
+Yolo3 instalation:
+
+$ activate yolo3 # in linux "source activate yolo3"
+(yolo3) $ pip install -r requirements.txt
+(yolo3) \$ pip install -e .
+
+Dataset structure:
+
+dataset/name/train/images|annotations
+
+Link to default yolo.weights
+
+https://pjreddie.com/media/files/yolov3.weights
