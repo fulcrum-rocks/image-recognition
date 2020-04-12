@@ -1,4 +1,4 @@
-# Train YOLO3 Eager
+# OBJECT DETECTION
 
 How to Create Neural Network for Recognizing Masks
 
