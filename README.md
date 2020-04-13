@@ -2,6 +2,10 @@
 
 How to Create Neural Network for Recognizing Masks
 
+https://blog.fulcrum.rocks/neural-network-image-recognition
+
+![](images/image.png)
+
 To start need:
 
 1. Special Yolov3
