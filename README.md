@@ -1,47 +1,53 @@
-# OBJECT DETECTION
+<p align="center">
+  <a href="https://fulcrum.rocks/" target="blank"><img src="images/Logo.svg" width="320" alt="Fulcrum Logo" /></a>
+</p>
+  <H1 align="center"><a href="https://blog.fulcrum.rocks/neural-network-image-recognition" target="blank">How to Create Neural Network for Recognizing Masks</a></br>[Part2] - Training & recognition</H1>
 
-How to Create Neural Network for Recognizing Masks
+## Description
 
-https://blog.fulcrum.rocks/neural-network-image-recognition
+<p>Neural network that could process images, video footage and recognize people wearing masks</p>
 
-![](images/image.png)
+## Parts
 
-To start need:
+<a href="https://github.com/fulcrum-rocks/image-recognition-labeling" target="blank">[Part1] - Labeling</a>
 
-1. Special Yolov3
-2. Dataset
-3. Imgs
-4. yolov3.weights
-5. Video
+<a href="https://github.com/fulcrum-rocks/image-recognition" target="blank">[Part2] - Training & recognition</a>
 
-// ==================== train ======================
+![image](images/image.png)
 
-python src/train_eager.py -c configs/mask_500.json
+## Tech stack:
 
-// ==================== read picture ======================
+1. Python 3.6+
+2. Tensorflow 2 nightly
+3. OpenCV-python
+4. Modified YoloV3
 
-python src/pred.py -c configs/mask_500.json -i imgs/1.jpg
+## Installation
 
-// ===================== Video =====================
-
-python video.py -c configs/mask_500.json -i videoplayback.mp4
-
-// ==================== test / benchmark ======================
-
-python src/eval.py -c configs/mask_500.json
-
-best result => {'fscore': 0.8120770432066632, 'precision': 0.8676307007786429, 'recall': 0.7632093933463796}
-
-Yolo3 instalation:
-
+```bash
 $ activate yolo3 # in linux "source activate yolo3"
 (yolo3) $ pip install -r requirements.txt
-(yolo3) \$ pip install -e .
+(yolo3) $ pip install -e .
+```
 
-Dataset structure:
+## Running the app
 
-dataset/name/train/images|annotations
+```bash
+// ==================== Training ========================
+python src/train_eager.py -c configs/mask_500.json
 
-Link to default yolo.weights
+// ==================== Picture =========================
+python src/pred.py -c configs/mask_500.json -i imgs/1.jpg
 
-https://pjreddie.com/media/files/yolov3.weights
+// ===================== Video ==========================
+python video.py -c configs/mask_500.json -i video.mp4
+
+// ==================== Benchmark =======================
+python src/eval.py -c configs/mask_500.json
+```
+
+## Dataset Structure:
+
+<p>dataset/</br><img src="images/dataset.png" width="150" alt="Nest Logo" /></p>
+
+<a href="https://pjreddie.com/media/files/yolov3.weights" target="blank">Link to default yolo.weights</a>
