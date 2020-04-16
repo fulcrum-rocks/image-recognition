@@ -46,8 +46,23 @@ python video.py -c configs/mask_500.json -i video.mp4
 python src/eval.py -c configs/mask_500.json
 ```
 
-## Dataset Structure:
+## Contact company
 
-<p>dataset/</br><img src="images/dataset.png" width="150" alt="Nest Logo" /></p>
+-   **Fulcrum**
+    -   _Email:_ [hello@fulcrum.rocks](mailto:hello@fulcrum.rocks?subject=[GitHub]%20Mask%20recognition)
+    -   _Website:_ [fulcrum.rocks](https://fulcrum.rocks/)
+    -   _Blog:_ [blog.fulcrum.rocks](https://blog.fulcrum.rocks/neural-network-image-recognition)
 
-<a href="https://pjreddie.com/media/files/yolov3.weights" target="blank">Link to default yolo.weights</a>
+## Contact developer
+
+-   **Serhii Kalachnikov**
+    -   _Email:_ [serhii@fulcrum.rocks](mailto:serhii@fulcrum.rocks?subject=[GitHub]%20Mask%20recognition)
+    -   _Linkedin:_ [Serhii Kalachnikov](https://www.linkedin.com/in/serhii-kalachnikov-1383ba89/)
+
+## Contributors
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT License](LICENSE)
